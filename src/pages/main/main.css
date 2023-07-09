@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&display=swap');
+
+.main-page {
+    display: grid;
+    grid-template-columns:auto;
+    background-color: #545454;
+    animation: slide-in  1.5s cubic-bezier(0.42, 0, 0.21, 1) forwards;;
+    transform: translateX(160%);
+}
+
+@keyframes slide-in {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.main-attribute {
+    display: grid;
+    grid-template-columns:auto;
+    justify-content: center;
+}
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.main-explanation {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    color: #fffefe;
+    font-size: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 2%;
+}
+
+.main-social-media {
+    display: flex;
+    justify-content: center;
+    border-top: solid;
+    border-color: white;
+}
+
+.explanation {
+    display: flex;
+    width: max-content;
+    letter-spacing: 2px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    width: 10%;
+}

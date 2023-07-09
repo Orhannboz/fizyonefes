@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap');
+
+.navbar-field{
+  display: flex;
+  font-family: 'Mukta', sans-serif;
+  font-size: 100%;
+  justify-content: center;
+  width: 150%;
+  border-radius: 13%;
+  border-color: white;
+}
+
+.navbar-field:hover{
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 1);
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.navigation {
+  background-color: #333841;
+  display: grid;
+  animation: fadeInUp 1.5s cubic-bezier(0.42, 0, 0.21, 1) forwards;
+  transform: translateX(-60%);
+}
+.navbar{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 8%;
+}
+
+.head-navbar {
+  margin-top: 0.5%;
+  margin-bottom: 1%;
+  display: grid;
+  grid-template-columns: 0.8fr 2fr;
+  grid-column-gap: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.head-navbar .logo{
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  cursor: pointer;
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translateX(0);
+  }
+}
