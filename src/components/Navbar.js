@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './fizyonefes_logo.png'
+import Logo from '../images/icons/fizyonefes_logo.png'
 import { useNavigate } from 'react-router-dom';
 
 import './navbar.css';

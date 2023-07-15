@@ -3,7 +3,6 @@
 .main-page {
     display: grid;
     grid-template-columns:auto;
-    background-color: #545454;
     animation: slide-in  1.5s cubic-bezier(0.42, 0, 0.21, 1) forwards;;
     transform: translateX(160%);
 }
@@ -26,14 +25,24 @@
     margin: 2%;
 }
 
+.main-logo img{
+   width: 500px;
+}
+
 .main-explanation {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
     justify-content: center;
-    color: #fffefe;
-    font-size: 30px;
     font-family: 'Barlow Condensed', sans-serif;
-    margin: 2%;
+    color: white;
+    max-width: 800px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 5%;
+}
+
+.explanation {
+    display: flex;
+    justify-content: center;
 }
 
 .main-social-media {
@@ -41,13 +50,9 @@
     justify-content: center;
     border-top: solid;
     border-color: white;
+    border-top-width: 1px;
 }
 
-.explanation {
-    display: flex;
-    width: max-content;
-    letter-spacing: 2px;
-}
 
 .social {
     display: flex;
@@ -55,3 +60,147 @@
     margin: 2%;
     width: 10%;
 }
+.services {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    color: white;
+    margin: 3%;
+}
+
+.main-cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-column-gap: 1%;
+}
+
+.main-cards .card {
+    display: flex;
+    margin: 5%;
+}
+
+.ortopedik {
+    background-image: url(../../images/cards/fizik_rehab.jpg);
+}
+
+.sports-rehab{
+    background-image: url(../../images/cards/sports-rehab.png);
+}
+
+.manuel-therapy{
+    background-image: url(../../images/cards/manual_therapy.jpg);
+}
+
+.preventive {
+    background-image: url(../../images/cards/koruyucu.png);
+}
+
+.geriatrik {
+    background-image: url(../../images/cards/geriatrik.jpg);
+}
+
+.in-home{
+    background-image: url(../../images/cards/evde-fizik-tedavi.jpg);
+}
+
+.g-therapy{
+    background-image: url(../../images/cards/g-therapy.jpg);
+}
+
+.clinical-therapy{
+    background-image: url(../../images/cards/klinik-masaj.jpg);
+}
+
+
+.card {
+    display:flex;
+    width: 280px;
+    height: 230px;
+    border-radius: 25px;
+    cursor: pointer;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 0px 0px #ffffff, -1px -1px 2px 2px #ffffff;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card-exp {
+    display:flex;
+    background-color: rgba(75, 207, 159, 0.75);
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    block-size: fit-content;
+    border-radius: 50px;
+    color: white;
+    width: 100%;
+    margin: 5%;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 1px 1px #ffffff, -2px -2px 4px 4px #ffffff;
+}
+
+.card:hover .card-exp{
+    font-size: 125%;
+    width: 200%;
+    box-shadow: 0.2px 0.2px 0.2px 0.2px #36ff6e, -1px -0.1px 0.1px 0.1px #27f16a;
+    transition: 0.5s;
+}
+
+@media (max-width:800px)  {
+    .main-attribute {
+        display: grid;
+        grid-template-columns:auto;
+        justify-content: center;
+    }
+
+    .card:hover .card-exp{
+        font-size: 100%;
+    }
+
+    .card-exp {
+        font-size: 80%;
+    }
+
+    .main-logo img{
+        width: 250px;
+    }
+
+    .main-explanation {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        color: #fffefe;
+        font-size: 100%;
+        font-family: 'Barlow Condensed', sans-serif;
+        margin: 5%;
+    }
+
+    .card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .main-cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-column-gap: 3%;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        margin: 5%;
+        width: 5%;
+    }
+
+    .social img {
+        width: 33px;
+    }
+
+    /* smartphones, iPhone, portrait 480x320 phones */ }
