@@ -35,7 +35,6 @@ function Main() {
                                                                                               width="48"/> </a></div>
             </div>
         </div>
-        <div className="services"><h1>Hizmetlerimiz;</h1></div>
         <div className={"main-cards"}>
             <div className={'card ortopedik'}> <span className={"card-exp"}>Ortopedik Rehabilitasyon </span></div>
             <div className={'card sports-rehab'}> <span className={"card-exp"}>Sportif Rehabilitasyon </span> </div>

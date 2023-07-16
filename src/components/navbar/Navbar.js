@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from '../images/icons/fizyonefes_logo.png'
 import { useNavigate } from 'react-router-dom';
 
 import './navbar.css';
@@ -15,7 +14,6 @@ function Navbar() {
     return (
         <div className={"navigation"}>
             <div className={"head-navbar"}>
-                <div className="logo" onClick={handleClick}><img src={Logo} width="250"/></div>
                 <div className={"navbar"}>
                     {field("Anasayfa", "/")}
                     {field("Ekibimiz", "/About")}

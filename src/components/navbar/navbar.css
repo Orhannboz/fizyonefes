@@ -2,12 +2,17 @@
 
 .navbar-field{
   display: flex;
+  white-space: nowrap;
   font-family: 'Mukta', sans-serif;
   font-size: 100%;
+  width: 100%;
+  letter-spacing: 3px ;
   justify-content: center;
-  width: fit-content;
   border-radius: 13%;
   border-color: white;
+  align-items: center;
+  padding: 3%;
+  margin: 3%;
 }
 
 .navbar-field:hover{
@@ -19,27 +24,31 @@
 a {
   text-decoration: none;
   color: white;
+  margin: 5%;
+  padding: 5%;
 }
 
 
 .navigation {
-  background-color: black;
+  background-image: linear-gradient(to right, rgba(0, 150, 255, 0.09), rgb(255,0,0,0));
   display: grid;
   animation: fadeInUp 1.5s cubic-bezier(0.42, 0, 0.21, 1) forwards;
   transform: translateX(-60%);
+  justify-content: center;
+  align-items: center;
 }
 .navbar{
   display: grid;
   justify-content: center;
   grid-template-columns: auto auto auto auto;
-  grid-column-gap: 8%;
+  grid-column-gap: 35%;
 }
 
 .head-navbar {
-  margin-top: 0.5%;
-  margin-bottom: 1%;
   display: grid;
-  grid-template-columns: 0.8fr 2fr;
+  grid-template-columns: auto;
+  margin: 3%;
+  padding: 3%;
   grid-column-gap: 20%;
   align-items: center;
   justify-content: center;
@@ -59,6 +68,14 @@ a {
     transform: translateX(0);
   }
 }
+@media (max-width:1200px)  {
+  .navbar{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 15%;
+  }
+}
 
 @media (max-width:800px)  {
   .navbar-field{
@@ -66,8 +83,8 @@ a {
     font-family: 'Mukta', sans-serif;
     font-size: 100%;
     justify-content: center;
-    width: 80px;
     border-radius: 13%;
+    letter-spacing: 1px;
     border-color: white;
   }
 
@@ -95,7 +112,48 @@ a {
   .navigation {
     display: grid;
     animation: fadeInUp 1.5s cubic-bezier(0.42, 0, 0.21, 1) forwards;
-    padding: 5%;
+    padding: 2%;
     transform: translateX(-60%);
   }
 }
+
+@media (max-width:400px)  {
+  .navbar-field{
+    display: flex;
+    font-family: 'Mukta', sans-serif;
+    font-size: 12px;
+    justify-content: center;
+    border-radius: 13%;
+    letter-spacing: 1px;
+    border-color: white;
+  }
+
+  .navbar{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10%;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .head-navbar {
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 20%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navigation {
+    display: grid;
+    animation: fadeInUp 1.5s cubic-bezier(0.42, 0, 0.21, 1) forwards;
+    padding: 2%;
+    transform: translateX(-60%);
+  }
+}
+

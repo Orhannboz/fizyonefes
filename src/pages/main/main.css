@@ -17,6 +17,7 @@
     display: grid;
     grid-template-columns:auto;
     justify-content: center;
+    margin-top: 5%;
 }
 
 .main-logo {
@@ -115,8 +116,8 @@
 
 .card {
     display:flex;
-    width: 280px;
-    height: 230px;
+    width: 300px;
+    height: 280px;
     border-radius: 25px;
     cursor: pointer;
     object-fit: fill;
@@ -151,14 +152,36 @@
     transition: 0.5s;
 }
 
-@media (max-width:800px)  {
+
+@media (max-width:1200px) {
+    .main-logo img {
+        width: 250px;
+    }
+
+    .main-explanation {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        color: #fffefe;
+        font-size: 150%;
+        font-family: 'Barlow Condensed', sans-serif;
+        margin: 5%;
+    }
+    .card {
+        width: 300px;
+        height: 280px;
+    }
+
+}
+
+@media (max-width:800px) {
     .main-attribute {
         display: grid;
         grid-template-columns:auto;
         justify-content: center;
     }
 
-    .card:hover .card-exp{
+    .card:hover .card-exp {
         font-size: 100%;
     }
 
@@ -166,7 +189,7 @@
         font-size: 80%;
     }
 
-    .main-logo img{
+    .main-logo img {
         width: 250px;
     }
 
@@ -181,7 +204,7 @@
     }
 
     .card {
-        width: 200px;
+        width: 250px;
         height: 200px;
     }
 
@@ -202,5 +225,63 @@
     .social img {
         width: 33px;
     }
+}
 
-    /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (max-width:500px) {
+    .main-attribute {
+        display: grid;
+        grid-template-columns:auto;
+        justify-content: center;
+    }
+
+    .card:hover .card-exp {
+        font-size: 0.7rem;
+    }
+
+
+
+    .card-exp {
+        width: 90%;
+        font-size: 0.7rem;
+    }
+
+    .main-logo img {
+        width: 250px;
+    }
+
+    .main-explanation {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        color: #fffefe;
+        font-size: 100%;
+        font-family: 'Barlow Condensed', sans-serif;
+        margin: 5%;
+    }
+
+    .card {
+        width: 200px;
+        height: 230px;
+    }
+
+    .main-cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-column-gap: 3%;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        margin: 5%;
+        width: 5%;
+    }
+
+    .social img {
+        width: 33px;
+    }
+}
+
+
+    /* smartphones, iPhone, portrait 480x320 phones */
