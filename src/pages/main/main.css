@@ -269,7 +269,7 @@
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     .main-attribute {
         display: grid;
         grid-template-columns:auto;
