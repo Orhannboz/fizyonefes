@@ -44,6 +44,7 @@
 .explanation {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .main-social-media {
@@ -58,9 +59,31 @@
 .social {
     display: flex;
     justify-content: center;
-    margin: 2%;
-    width: 10%;
+
 }
+.main-cards a {
+    margin: 0;
+    padding: 0;
+}
+.social a {
+    display: -moz-inline-box;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    width: 90px;
+    line-height: 40px;
+    border-radius: 35%;
+    color: #ffffff;
+    margin: 15%;
+    transition: all 0.5s ease;
+}
+
+.social a:hover{
+    background-color: white;
+    color: black;
+}
+
 .services {
     display: flex;
     justify-content: center;
@@ -114,6 +137,9 @@
 }
 
 
+
+
+
 .card {
     display:flex;
     width: 300px;
@@ -158,6 +184,11 @@
         width: 250px;
     }
 
+    .main-cards{
+        grid-template-columns: auto auto auto;
+    }
+
+
     .main-explanation {
         display: grid;
         grid-template-columns: auto;
@@ -168,7 +199,7 @@
         margin: 5%;
     }
     .card {
-        width: 300px;
+        width: 250px;
         height: 280px;
     }
 
@@ -218,8 +249,19 @@
     .social {
         display: flex;
         justify-content: center;
-        margin: 5%;
-        width: 5%;
+    }
+
+    .social a {
+        display: -moz-inline-box;
+        justify-content: center;
+        background-color: rgba(255,255,255,0.2);
+        text-align: center;
+        width: 65px;
+        line-height: 40px;
+        border-radius: 35%;
+        color: #ffffff;
+        margin: 15%;
+        transition: all 0.5s ease;
     }
 
     .social img {
@@ -238,7 +280,18 @@
         font-size: 0.7rem;
     }
 
-
+    .social a {
+        display: -moz-inline-box;
+        justify-content: center;
+        background-color: rgba(255,255,255,0.2);
+        text-align: center;
+        width: 65px;
+        line-height: 40px;
+        border-radius: 35%;
+        color: #ffffff;
+        margin: 15%;
+        transition: all 0.5s ease;
+    }
 
     .card-exp {
         width: 90%;
@@ -274,8 +327,6 @@
     .social {
         display: flex;
         justify-content: center;
-        margin: 5%;
-        width: 5%;
     }
 
     .social img {

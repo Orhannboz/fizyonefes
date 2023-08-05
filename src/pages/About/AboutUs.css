@@ -1,0 +1,85 @@
+.about-me-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+.profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile h1,
+.profile h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.about-social-media {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+
+.profile {
+    text-align: center; /* Center the profile content */
+    padding: 20px; /* Add padding to the profile section */
+}
+
+.bio h2,
+.contact h2 {
+    margin-bottom: 5%;
+}
+
+.bio p,
+.contact p {
+    line-height: 1.6;
+}
+
+.bio{
+    margin: 5%;
+}
+
+.contact {
+    margin: 5%;
+}
+
+.contact-link a{
+    margin: 0;
+    padding: 0;
+}
+
+.whole-container {
+    animation: slide-in  1.5s cubic-bezier(0.42, 0, 0.21, 1) forwards;;
+    transform: translateX(160%);
+}
+
+@keyframes slide-in {
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .about-me-container {
+        max-width: 800px;
+        margin: 5% auto;
+        padding: 20px;
+        color: white;
+        border: none;
+    }
+    .profile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+
+}
