@@ -33,16 +33,39 @@ function Main() {
             </div>
         </div>
         <div className={"main-cards"}>
+
             <a href={"/Orthopedic"}>
                 <div className={'card ortopedik'}><span className={"card-exp"}>Ortopedik Rehabilitasyon </span></div>
             </a>
-            <div className={'card sports-rehab'}><span className={"card-exp"}>Sportif Rehabilitasyon </span></div>
-            <div className={'card manuel-therapy'}><span className={"card-exp"}>Manuel Terapi </span></div>
-            <div className={'card preventive'}><span className={"card-exp"}>Koruyucu Fizyoterapi </span></div>
-            <div className={'card geriatrik'}><span className={"card-exp"}>Geriatrik Rehabilitasyon </span></div>
-            <div className={'card in-home'}><span className={"card-exp"}>Evde Fizik Tedavi </span></div>
-            <div className={'card g-therapy'}><span className={"card-exp"}>G Therapy </span></div>
-            <div className={'card clinical-therapy'}><span className={"card-exp"}>Klinik Masaj </span></div>
+
+            <a href={"/Pulmoner"}>
+                <div className={'card pulmoner-rehab'}><span className={"card-exp"}>Pulmoner Rehabilitasyon </span></div>
+            </a>
+
+            <a href={"/ManuelTherapy"}>
+                <div className={'card manuel-therapy'}><span className={"card-exp"}>Manuel Terapi </span></div>
+            </a>
+
+            <a href={"/Preventive"}>
+                <div className={'card preventive'}><span className={"card-exp"}>Koruyucu Fizyoterapi </span></div>
+            </a>
+
+            <a href={"/Geriatrik"}>
+                <div className={'card geriatrik'}><span className={"card-exp"}>Geriatrik Rehabilitasyon </span></div>
+            </a>
+
+            <a href={"/InHomeTherapy"}>
+                <div className={'card in-home'}><span className={"card-exp"}>Evde Fizik Tedavi </span></div>
+            </a>
+
+            <a href={"GTherapy"}>
+                <div className={'card g-therapy'}><span className={"card-exp"}>G Therapy </span></div>
+            </a>
+
+            <a href={"ClinicalTherapy"}>
+                <div className={'card clinical-therapy'}><span className={"card-exp"}>Klinik Masaj </span></div>
+            </a>
+
         </div>
         <Comment/>
     </div>

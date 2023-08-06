@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutUs.css';
 import Ersin from '../../images/profile/ersin.png'
+import Irem from '../../images/profile/irem.jpg'
 
 const AboutUs = () => {
     return (
@@ -34,7 +35,7 @@ const AboutUs = () => {
 
             <div className="about-me-container">
                 <div className="profile">
-                    <img src={Ersin} alt="Your Name"/>
+                    <img src={Irem} alt="Your Name"/>
                     <h1>İrem Büyünlü</h1>
                     <h2>Fizyoterapist</h2>
                 </div>

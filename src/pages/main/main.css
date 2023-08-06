@@ -108,8 +108,8 @@
     background-image: url(../../images/cards/fizik_rehab.jpg);
 }
 
-.sports-rehab{
-    background-image: url(../../images/cards/sports-rehab.png);
+.pulmoner-rehab{
+    background-image: url(../../images/cards/Pulmoner-Rehabilitasyon.jpg);
 }
 
 .manuel-therapy{
@@ -152,6 +152,8 @@
     box-shadow: 0px 0px 0px 0px #ffffff, -1px -1px 2px 2px #ffffff;
     justify-content: center;
     align-items: flex-end;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .card-exp {
