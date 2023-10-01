@@ -1,5 +1,7 @@
 /* ContactInfo.css */
-
+.contact-info-header h2{
+    color: white;
+}
 .contact-info-container {
     margin: 0 auto;
     padding: 20px;

@@ -1,160 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap');
+.navbar-logo img{
+  width: 25%;
+}
 
-.navbar-field{
+.hamburger-menu {
   display: flex;
-  white-space: nowrap;
-  font-family: 'Mukta', sans-serif;
-  font-size: 100%;
-  width: 100%;
-  letter-spacing: 3px ;
-  justify-content: center;
-  border-radius: 13%;
-  border-color: white;
-  align-items: center;
-  padding: 3%;
-  margin: 3%;
-}
-
-.navbar-field:hover{
-  transform: scale(1.05);
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 1);
-}
-
-
-a {
-  text-decoration: none;
-  color: white;
-  margin: 5%;
-  padding: 5%;
-}
-
-
-.navigation {
-  background-image: linear-gradient(to right, rgba(0, 150, 255, 0.09), rgb(255,0,0,0));
-  display: grid;
-  animation: fadeInUp 1.5s cubic-bezier(0.42, 0, 0.21, 1) forwards;
-  transform: translateX(-60%);
-  justify-content: center;
-  align-items: center;
-}
-.navbar{
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto auto auto auto;
-  grid-column-gap: 35%;
-}
-
-.head-navbar {
-  display: grid;
-  grid-template-columns: auto;
-  margin: 3%;
-  padding: 3%;
-  grid-column-gap: 20%;
-  align-items: center;
-  justify-content: center;
-}
-
-.head-navbar .logo{
-  display: flex;
-  justify-content: center;
-}
-
-.logo img {
+  flex-direction: column;
   cursor: pointer;
+  user-select: none;
 }
 
-@keyframes fadeInUp {
-  to {
-    transform: translateX(0);
-  }
-}
-@media (max-width:1200px)  {
-  .navbar{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 15%;
-  }
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 3px 0;
+  transition: 0.4s;
 }
 
-@media (max-width:800px)  {
-  .navbar-field{
-    display: flex;
-    font-family: 'Mukta', sans-serif;
-    font-size: 100%;
-    justify-content: center;
-    border-radius: 13%;
-    letter-spacing: 1px;
-    border-color: white;
-  }
-
-  .navbar{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 10%;
-  }
-
-  .logo img {
-    display: none;
-  }
-
-  .head-navbar {
-    margin-top: 0.5%;
-    margin-bottom: 1%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-column-gap: 20%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .navigation {
-    display: grid;
-    animation: fadeInUp 1.5s cubic-bezier(0.42, 0, 0.21, 1) forwards;
-    padding: 2%;
-    transform: translateX(-60%);
-  }
+.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-@media (max-width:600px)  {
-  .navbar-field{
-    display: flex;
-    font-family: 'Mukta', sans-serif;
-    font-size: 12px;
-    justify-content: center;
-    border-radius: 13%;
-    letter-spacing: 1px;
-    border-color: white;
-  }
-
-  .navbar{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 10%;
-  }
-
-  .logo img {
-    display: none;
-  }
-
-  .head-navbar {
-    margin-top: 0.5%;
-    margin-bottom: 1%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-column-gap: 20%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .navigation {
-    display: grid;
-    animation: fadeInUp 1.5s cubic-bezier(0.42, 0, 0.21, 1) forwards;
-    padding: 2%;
-    transform: translateX(-60%);
-  }
+.open .bar:nth-child(2) {
+  opacity: 0;
 }
 
+.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 
+.mobile-navbar-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  #333;
+  flex-direction: column;
+}
+
+/* X icon styles */
+.x-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-color: white;
+}
+
+.xbar {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.bar1 {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.bar2 {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Close icon hover effect (optional) */
+.x-icon:hover .bar {
+  background-color: #ff0000; /* Change the color on hover */
+}

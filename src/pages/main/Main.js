@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../images/icons/fizyonefes_logo.png'
+import Logo from '../../images/icons/logo-new.png'
 import './main.css';
 import Comment from "./Comment";
 
@@ -14,12 +14,7 @@ function Main() {
             <div className="main-logo"><img src={Logo}/></div>
             <div className="main-explanation">
                 <div className="explanation">
-                    <p>Fizyoterapi ve spora bütüncül bakan merkezimiz ağrısız bir şekilde
-                        yaşama devam
-                        etmek isteyen vücudunun fonksiyonelliğini korumayı ve arttırmayı
-                        hedefleyen her
-                        yaştan bireylere ve her türlü spor branşındaki sporculara hizmet
-                        vermektedir. </p>
+                    <p>AĞRI ÇÖZÜM MERKEZİ </p>
                 </div>
             </div>
             <div className="main-social-media">

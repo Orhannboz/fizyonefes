@@ -58,6 +58,14 @@
     transform: translateX(160%);
 }
 
+.whole-container h2{
+    color:black;
+}
+
+.whole-container h1{
+    color:black;
+}
+
 @keyframes slide-in {
     to {
         transform: translateX(0);
