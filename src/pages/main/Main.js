@@ -14,7 +14,7 @@ function Main() {
             <div className="main-logo"><img src={Logo}/></div>
             <div className="main-explanation">
                 <div className="explanation">
-                    <p>AĞRI ÇÖZÜM MERKEZİ KOMİK DEĞİL </p>
+                    <p>AĞRI ÇÖZÜM MERKEZİ</p>
                 </div>
             </div>
             <div className="main-social-media">
